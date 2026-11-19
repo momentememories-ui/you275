@@ -174,7 +174,7 @@
     <div class="app-container">
         <div class="scratch-wrapper" id="scratch-wrapper">
             <div class="scratch-area">
-                <img id="reveal-img" src="photo1.jpg" alt="Memory">
+                <img id="reveal-img" src="photo1.webp" alt="Memory">
                 <canvas id="scratch-canvas"></canvas>
             </div>
         </div>
@@ -223,7 +223,7 @@
         }
 
         // Photos Config
-        const photos = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg', 'photo4.jpg'];
+        const photos = ['photo1.webp', 'photo2.webp', 'photo3.webp', 'photo4.webp'];
         let currentStep = 0;
 
         const scratchWrapper = document.getElementById('scratch-wrapper');
@@ -236,9 +236,9 @@
         canvas.height = size;
 
         const overlayImg = new Image();
-        overlayImg.src = 'photo.jpg';
+        overlayImg.src = 'photo.webp';
 
-        // วาดลายเท้าแมวและหน้าแมวบนแผ่นขูด (ใช้กรณีไม่มีไฟล์ photo.jpg หรือกำลังโหลด)
+        // วาดลายเท้าแมวและหน้าแมวบนแผ่นขูด (ใช้กรณีไม่มีไฟล์ photo.webp หรือกำลังโหลด)
         function drawDefaultCatOverlay() {
             // พื้นหลังสีเขียวพาสเทล
             ctx.fillStyle = '#a3d9b1';
